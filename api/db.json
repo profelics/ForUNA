@@ -1,0 +1,119 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "today-products": [
+    {
+      "id": 1,
+      "name": "broilers",
+      "detail": "8 weeks",
+      "price": "3,500",
+      "per": "broiler",
+      "img": "img/IMG-20200524-WA0225.jpg"
+    },
+    {
+      "id": 2,
+      "name": "beans",
+      "detail": "100kg long grain, stone free",
+      "price": "5,500",
+      "per": "100kg",
+      "img": "img/IMG-20200524-WA0231.jpg"
+    },
+    {
+      "id": 3,
+      "name": "corn",
+      "detail": "100kg",
+      "price": "26,000",
+      "per": "100kg",
+      "img": "img/IMG-20200524-WA0229.jpg"
+    },
+    {
+      "id": 4,
+      "name": "egg",
+      "detail": "crate of egg(broiler)",
+      "price": "950",
+      "per": "crate",
+      "img": "img/IMG-20200524-WA0223.jpg"
+    },
+    {
+      "id": 5,
+      "name": "catfish",
+      "detail": "1.5kg each",
+      "price": "1,200",
+      "per": "1.5kg fish",
+      "img": "img/IMG-20200524-WA0213.jpg"
+    },
+    {
+      "id": 6,
+      "name": "guinea corn",
+      "detail": "100kg",
+      "price": "25,000",
+      "per": "100kg",
+      "img": "img/IMG-20200524-WA0215.jpg"
+    }
+  ],
+  "popular-products": [
+    {
+      "id": 1,
+      "name": "egg",
+      "detail": "crate of egg(broiler)",
+      "price": "950",
+      "per": "crate",
+      "img": "img/IMG-20200524-WA0223.jpg"
+    },
+    {
+      "id": 2,
+      "name": "local rice",
+      "detail": "50kg long grain, stone free",
+      "price": "15,500",
+      "per": "bag",
+      "img": "img/IMG-20200524-WA0228.jpg"
+    },
+    {
+      "id": 3,
+      "name": "tomatoes",
+      "detail": "fresh red tomatoes",
+      "price": "3,000",
+      "per": "basket",
+      "img": "img/IMG-20200524-WA0232.jpg"
+    },
+    {
+      "id": 4,
+      "name": "catfish",
+      "detail": "1.5kg each",
+      "price": "1,200",
+      "per": "1.5kg fish",
+      "img": "img/IMG-20200524-WA0213.jpg"
+    },
+    {
+      "id": 5,
+      "name": "groundnut",
+      "detail": "100kg",
+      "price": "30,000",
+      "per": "100kg",
+      "img": "img/IMG-20200524-WA0218.jpg"
+    },
+    {
+      "id": 6,
+      "name": "layers",
+      "detail": "8 months",
+      "price": "2,000",
+      "per": "hen",
+      "img": "img/IMG-20200524-WA0207.jpg"
+    }
+  ]
+}

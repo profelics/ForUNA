@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/Giveaways-small.png">
+
+    <title>ForUNA &mdash; For modern farmers</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" alt="logo" class="header__logo">
+            <div class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-list--item">
+                        <a href="#" class="header__nav-list--link">Products</a>
+                    </li>
+                    <li class="header__nav-list--item">
+                        <a href="#" class="header__nav-list--link">Orders</a>
+                    </li>
+                    <li class="header__nav-list--item">
+                        <a href="#" class="header__nav-list--link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__user">
+                <a href="#popup" class="header__user--sign-in">Sign in</a>
+            </div>
+            <div id="user-nav" class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
+                    </svg>
+                    <span class="user-nav__notification">7</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="img/tolu.jpg" alt="User photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Tolu</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="search">
+            <div class="slide fade">
+                <img src="img/IMG-20200524-WA0219.jpg" alt="" class="search__img">
+                <div class="search__content">
+                    <h1 class="content-text">
+                        <span class="content-text__huge">Africa's Online Community For Farmers</span>
+                        <span class="content-text__small">A Community Of Happy Farmers</span>
+                    </h1>
+                    <form action="#" class="form">
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Search a product" id="name" required>
+                        </div>
+                        <div class="form__group">
+                            <button class="btn btn--green">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="img/IMG-20200524-WA0214.jpg" alt="" class="search__img">
+                <div class="search__content">
+                    <h1 class="content-text">
+                        <span class="content-text__huge">The Best Way To Discover Africa</span>
+                        <span class="content-text__small">Invest In a Farm Today And Build A Continent That Builds Itself</span>
+                    </h1>
+                    <form action="#" class="form">
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Search a product" id="name" required>
+                        </div>
+                        <div class="form__group">
+                            <button class="btn btn--green">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="img/IMG-20200524-WA0217.jpg" alt="" class="search__img">
+                <div class="search__content">
+                    <h1 class="content-text">
+                        <span class="content-text__huge">Delivering Products At Your Doorstep</span>
+                        <span class="content-text__small">Together We Can Stop Hunger In Our Communities</span>
+                    </h1>
+                    <form action="#" class="form">
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Search a product" id="name" required>
+                        </div>
+                        <div class="form__group">
+                            <button class="btn btn--green">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <section class="guide">
+            <div class="guide__container">
+                <h1 class="title">How It Works</h1>
+                <div class="guide__tile">
+                    <svg class="guide__icon">
+                        <use xlink:href="img/sprite.svg#icon-laptop"></use>
+                    </svg>
+                    <h4 class="guide__heading">Select a farm product</h4>
+                    <p class="guide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="guide__tile">
+                    <svg class="guide__icon">
+                        <use xlink:href="img/sprite.svg#icon-credit-card"></use>
+                    </svg>
+                    <h4 class="guide__heading">Choose a mode of payment</h4>
+                    <p class="guide__text">A voluptatum libero laborum aliquam voluptas ea enim cum quos dolor labore debitis, perferendis perspiciatis modi earum?</p>
+                </div>
+                <div class="guide__tile">
+                    <svg class="guide__icon">
+                        <use xlink:href="img/sprite.svg#icon-truck"></use>
+                    </svg>
+                    <h4 class="guide__heading">Recieve your delivery</h4>
+                    <p class="guide__text">Distinctio fuga, autem impedit nulla reprehenderit corporis a earum fugiat harum doloribus vitae quisquam</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="today-deals">
+            <h1 class="title">Today Deals</h1>
+            <div class="products"  id="today-products">
+            </div>
+        </section>
+
+        <section class="popular-deals">
+            <h1 class="title">Popular Deals</h1>
+            <div class="products"  id="popular-products"></div>
+        </section>
+
+        <section class="partner">
+            <div class="partner__detail">
+                <h1 class="partner-text content-text">
+                    <span class="partner-text__huge content-text__huge">Become A Partner Today</span>
+                    <span class="partner-text__small content-text__small">Register Your Farm To Get Started</span>
+                </h1>
+                <div class="form__group">
+                    <button class="btn btn--green">Click Here</button>
+                </div>
+            </div>
+            <div class="partner__img">
+                <img src="img/IMG-20200524-WA0220.jpg" alt="man image" class="img-round">
+            </div>
+        </section>
+
+        <section class="feedback">
+            <h1 class="title title-center">Farmers Feedback</h1>
+            <div class="feedback__content">
+                <div class="feedback__img">
+                    <img src="img/tolu.jpg" alt="farmer image" class="img-round">
+                </div>
+                <div class="feedback__text">
+                    <p class="feedback__text--p">Perspiciatis in eius non quaerat ea similique officia porro, corrupti enim explicabo veritatis fugiat saepe ut tempora cumque est atque autem eos!</p>
+                    <span class="feedback__text--name">Ekene Nwolisa</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h1 class="title title-center">Categories</h1>
+            <div class="category">
+                <h4 class="category__title">Grain</h4>
+                <span class="category__detail">Details</span>
+            </div>
+            <div class="category">
+                <h4 class="category__title">Oil</h4>
+                <span class="category__detail">Details</span>
+            </div>
+            <div class="category">
+                <h4 class="category__title">Legumes</h4>
+                <span class="category__detail">Details</span>
+            </div>
+            <div class="category">
+                <h4 class="category__title">Fish & Beef</h4>
+                <span class="category__detail">Details</span>
+            </div>
+            <div class="category">
+                <h4 class="category__title">Poultry</h4>
+                <span class="category__detail">Details</span>
+            </div>
+            <div class="category">
+                <h4 class="category__title">Vegetables & Fruits</h4>
+                <span class="category__detail">Details</span>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <h1 class="subscribe__text">
+                <span class="subscribe__text--huge">Subscribe To Our Newsletter</span>
+                <span class="subscribe__text--small">Don't miss out on our great offers and recieve deals from our farm via email</span>
+            </h1>
+            <form action="#" class="form subscribe__form">
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Name" id="name" required>
+                    <input type="email" class="form__input" placeholder="Email" id="name" required>
+                </div>
+                <div class="form__group">
+                    <button class="btn btn--green">Subscribe</button>
+                </div>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <img src="img/logo.png" alt="footer-logo" class="footer__logo">
+            </div>
+            <div class="footer__content">
+                <div class="footer__text">
+                    <p class="footer__text--p">See all cities</p>
+                </div>
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Become An Agent</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Become A Farmer Partner</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__icons">
+                    <svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-facebook-with-circle"></use>
+                    </svg>
+                    <svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-twitter-with-circle"></use>
+                    </svg>
+                    <svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-instagram-with-circle"></use>
+                    </svg>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <h1 class="popup__content--header">Sign-in</h1>
+            <form action="#" class="form popup__form">
+                <div class="form__group popup__group">
+                    <input type="text" class="form__input  popup__input" placeholder="Username" id="name" required>
+                    <input type="password" class="form__input  popup__input" placeholder="Password" id="Password" required>
+                </div>
+                <div class="form__group">
+                    <button id="sign-in" class="btn btn--green">Signin</button>
+                </div>
+            </form>
+            <ul class="popup__list">
+                <li class="popup__item">
+                    <a href="#" class="popup__link">Register</a>
+                </li>
+                <li class="popup__item">
+                    <a href="#" class="popup__link">Forgot Password</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="src/app.js"></script>
+</body>
+</html>
